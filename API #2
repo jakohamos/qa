@@ -1,0 +1,235 @@
+<!doctype html>
+<!--[if lt IE 7 ]>
+<html class="ie ie6" lang="en">
+    <![endif]-->
+    <!--[if IE 7 ]>
+    <html class="ie ie7" lang="en">
+        <![endif]-->
+        <!--[if IE 8 ]>
+        <html class="ie ie8" lang="en">
+            <![endif]-->
+            <!--[if IE 9 ]>
+            <html class="ie ie9" lang="en">
+                <![endif]-->
+                <!--[if gt IE 9]>
+                <!-->
+                <html lang="en">
+                    <!--
+                    <![endif]-->
+                    <head data-hook="inside_head">
+                        <meta charset="utf-8">
+                        <title>Shopping Cart - Spree Demo Site</title>
+                        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+                        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport">
+                        <meta name="keywords" />
+                        <meta name="description" />
+                        <link href="http://demo.spreecommerce.org:3000/cart" rel="canonical" />
+                        <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-92e86d463e909754599d66730477622cd3dd0b9bff58c47c9c38bebceb8073e5.ico" />
+                        <link rel="stylesheet" media="screen" href="/assets/spree/frontend/frontend_bootstrap.self-14827820b36c8ae08efa529be51eb46cb335975174201b7342e4e77b8f7d5592.css?body=1" />
+                        <link rel="stylesheet" media="screen" href="/assets/spree/frontend.self-e73dc9de72274c38c22893ab23f2a409bb2001bd63595499790b46cf2f0c3c4a.css?body=1" />
+                        <link rel="stylesheet" media="screen" href="/assets/spree/frontend/all.self-33fc4a513acb9a5f3fd4ba26b89c94184e5d028c4bd40eee6736d3ccfea5c140.css?body=1" />
+                        <meta name="csrf-param" content="authenticity_token" />
+                        <meta name="csrf-token" content="jyveUlywdMvBQxUcicGR8r8KFfCRC/JvVNxPzAk9XwPbd3OQX2trwcy6NfhWcXvZCOzyrVuWTgNo7tmX9RRIWA==" />
+                        <script>
+  SpreePaths = {"mounted_at":"/","admin":"admin/"}
+</script>
+                        <script src="/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1"></script>
+                        <script src="/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1"></script>
+                        <script src="/assets/accounting.min.self-8999e7719b846e414b2c86188ebf9d9dd765bde57a76a6d45b2682d967466085.js?body=1"></script>
+                        <script src="/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1"></script>
+                        <script src="/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1"></script>
+                        <script src="/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1"></script>
+                        <script src="/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1"></script>
+                        <script src="/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1"></script>
+                        <script src="/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1"></script>
+                        <script src="/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1"></script>
+                        <script src="/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1"></script>
+                        <script src="/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1"></script>
+                        <script src="/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1"></script>
+                        <script src="/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1"></script>
+                        <script src="/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1"></script>
+                        <script src="/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1"></script>
+                        <script src="/assets/jquery.payment.self-38d1c43bb5a79a62bce3ec642fe216db420582062f0990bb7ce095fe9698a834.js?body=1"></script>
+                        <script src="/assets/jsuri.self-32d1bf44ffa16da5b2ea10c661f790bf0944362395283a91baf62d43407f10ba.js?body=1"></script>
+                        <script src="/assets/spree.self-1e510c93107b6414cfd67d51db14a3526a5d2ec9bf056d8a46768abfc1b14817.js?body=1"></script>
+                        <script src="/assets/spree/frontend/coupon_manager.self-00b9fde42da5242d693698339716f0eb035c00693cee35058a24837f9a91d448.js?body=1"></script>
+                        <script src="/assets/spree/frontend/cart.self-ada44fbfd7cf6b02aeb988d18aa00d5b1f3893f03d4751e6cbd2521cf0de2389.js?body=1"></script>
+                        <script src="/assets/spree/frontend/checkout.self-d127b3baa6b2f6f6585dc009dcff30bfdc6c6c019fae9a6441c2ed2aab4a6b16.js?body=1"></script>
+                        <script src="/assets/spree/frontend/checkout/address.self-9ecefc5ffebfe01d6b4a17f0a53302c6573de44ff476bb28ef1b91e333291dec.js?body=1"></script>
+                        <script src="/assets/spree/frontend/checkout/payment.self-9d26524fc7e00b8c1010fbae3f2f61fca2ade88f3ddf95fe38f0a3648b8025ff.js?body=1"></script>
+                        <script src="/assets/spree/frontend/product.self-3c69826fd187c0c8e131b3f8844a488b7a7043af2a1a20a100986cbffa2e101e.js?body=1"></script>
+                        <script src="/assets/spree/frontend.self-79488488398f5f5aed236dd6e9f914599370d04dfe70fda61b8c83bf739b1088.js?body=1"></script>
+                        <script src="/assets/spree/frontend/account.self-eb0d6bf1911723664c271727fd1fdaafd245c861b66b77ef138956b5e1dcf731.js?body=1"></script>
+                        <script src="/assets/spree/frontend/spree_auth.self-75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070.js?body=1"></script>
+                        <script src="/assets/spree/frontend/all.self-6bc763d76cec2c478cda75a45cba1849fdc646ac84a45db81497ebf4c268d75a.js?body=1"></script>
+                        <!--[if lt IE 9]>
+                        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script>
+                        <![endif]-->
+                        <script>
+  Spree.translations = {"coupon_code_applied":"The coupon code was successfully applied to your order."}
+</script>
+                    </head>
+                    <body class="one-col" id="cart" data-hook="body">
+                        <div id="spree-header">
+                            <header id="header" data-hook>
+                                <div class="container">
+                                    <div class="row">
+                                        <figure id="logo" class="col-md-4 col-sm-3" data-hook>
+                                            <a href="/">
+                                                <img src="/assets/logo/spree_50-0ae687ccd486b63b01687b1df9e5394430f6fce3ab40c28250b179be4363ddc1.png" />
+                                            </a>
+                                        </figure>
+                                        <nav class="navbar col-md-8 col-sm-9" id="top-nav-bar">
+                                            <ul id="nav-bar" class="nav navbar-nav navbar-right" data-hook>
+                                                <script>if(typeof Spree.fetch_account !== 'undefined') Spree.fetch_account()</script>
+                                                <li id="search-bar" data-hook>
+                                                    <form class="navbar-form" action="/products" accept-charset="UTF-8" method="get">
+                                                        <input name="utf8" type="hidden" value="&#x2713;" />
+                                                        <div class="form-group">
+                                                            <select name="taxon" id="taxon" aria-label="Taxon" class="form-control">
+                                                                <option value="">All departments</option>
+                                                                <option value="1">Categories</option>
+                                                                <option value="2">Brands</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="search" name="keywords" id="keywords" placeholder="Search" class="form-control" />
+                                                        </div>
+                                                        <input type="submit" value="Search" class="btn btn-success" data-disable-with="Search" />
+                                                    </form>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </header>
+                            <div class="container">
+                                <nav class="col-md-12">
+                                    <div id="main-nav-bar" class="navbar">
+                                        <ul class="nav navbar-nav" data-hook>
+                                            <li id="home-link" data-hook>
+                                                <a href="/">Home</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="nav navbar-nav navbar-right" data-hook>
+                                            <li id="link-to-cart" data-hook>
+                                                <noscript>
+                                                    <a class="cart-info full" href="/cart">
+                                                        <span class='glyphicon glyphicon-shopping-cart'></span> Cart: (1)
+                                                        <span class='amount'>$19.99</span>
+                                                    </a>
+                                                </noscript>
+        &nbsp;
+                                            </li>
+                                            <script>Spree.fetch_cart()</script>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row" data-hook>
+                                <div id="content" class="col-sm-12" data-hook>
+                                    <div data-hook="cart_container">
+                                        <h1>Shopping Cart</h1>
+                                        <div data-hook="outside_cart_form">
+                                            <form class="edit_order" id="update-cart" action="/cart" accept-charset="UTF-8" method="post">
+                                                <input name="utf8" type="hidden" value="&#x2713;" />
+                                                <input type="hidden" name="_method" value="patch" />
+                                                <input type="hidden" name="authenticity_token" value="IJ6zTagrqxpbO/zmeot1WelJ9NZAzp6cGvNCUVDVmL0i6eoAZGVOocFdwvWNSJYHs6YlHoeT/qVE7CB1uCFnXQ==" />
+                                                <div data-hook="inside_cart_form">
+                                                    <div data-hook="cart_items" class="table-responsive">
+                                                        <table class="table" id="cart-detail" data-hook>
+                                                            <thead>
+                                                                <tr class="active" data-hook="cart_items_headers">
+                                                                    <th class="cart-item-description-header" colspan="2">Item</th>
+                                                                    <th class="cart-item-price-header">Price</th>
+                                                                    <th class="cart-item-quantity-header">Qty</th>
+                                                                    <th class="cart-item-total-header">Total</th>
+                                                                    <th class="cart-item-delete-header"></th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="line_items" data-hook>
+                                                                <tr class="line-item">
+                                                                    <td class="cart-item-image" data-hook="cart_item_image">
+                                                                        <a href="/products/ruby-baseball-jersey">
+                                                                            <img src="http://31.220.42.115:3000/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBKdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0a4664b0437e0e8793e29a5172b6d0b1a996f8bd/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lOTVRBd2VERXdNRDRHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--0734fcdf486bc5008a328d4d64e10f38ff79ca6f/ruby_baseball.png" />
+                                                                        </a>
+                                                                    </td>
+                                                                    <td class="cart-item-description" data-hook="cart_item_description">
+                                                                        <h4>
+                                                                            <a href="/products/ruby-baseball-jersey">Ruby Baseball Jersey</a>
+                                                                        </h4>
+                                                                        <span class="line-item-description" data-hook="line_item_description">
+        Commodi et reprehenderit facilis veritatis quis beatae. Quaerat architecto id ut quia non. Dolore...
+      </span>
+                                                                    </td>
+                                                                    <td class="lead text-primary cart-item-price" data-hook="cart_item_price">
+      $19.99
+    </td>
+                                                                    <td class="cart-item-quantity" data-hook="cart_item_quantity" valign="center">
+                                                                        <input min="0" class="form-control line_item_quantity" size="5" type="number" value="1" name="order[line_items_attributes][0][quantity]" id="order_line_items_attributes_0_quantity" />
+                                                                    </td>
+                                                                    <td class="lead text-primary cart-item-total" data-hook="cart_item_total">
+      $19.99
+    </td>
+                                                                    <td class="cart-item-delete" data-hook="cart_item_delete">
+                                                                        <a class="delete" id="delete_line_item_18" href="#">
+                                                                            <span class="glyphicon glyphicon-minus-sign"></span>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <input type="hidden" value="18" name="order[line_items_attributes][0][id]" id="order_line_items_attributes_0_id" />
+                                                            </tbody>
+                                                            <tr class="warning cart-total">
+                                                                <td colspan="4" align='right'>
+                                                                    <h5>Total</h5>
+                                                                </td>
+                                                                <td class="lead" colspan>$19.99</td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                    <div class="links col-md-3 navbar-form pull-right text-right" data-hook="cart_buttons">
+                                                        <div class="form-group">
+                                                            <button name="button" type="submit" class="btn btn-primary" id="update-button">
+                Update
+</button>
+                                                            <button name="checkout" type="submit" class="btn btn-lg btn-success" id="checkout-link">
+                Checkout
+</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class='col-md-6 form-inline pull-right' data-hook='coupon_code'>
+                                                        <label>
+                                                            <label for="order_coupon_code">Coupon Code</label>
+                                                            <input size="30" class="form-control" type="text" name="order[coupon_code]" id="order_coupon_code" />
+                                                            <button name="button" type="submit" class="btn btn-default">Apply</button>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div id="empty-cart" class="col-md-3 pull-left" data-hook>
+                                            <form action="/cart/empty" accept-charset="UTF-8" method="post">
+                                                <input name="utf8" type="hidden" value="&#x2713;" />
+                                                <input type="hidden" name="_method" value="put" />
+                                                <input type="hidden" name="authenticity_token" value="fPk7qpbeqZbpUKq1EM0t2Im+Ls3H/BCnRxLsh5h7UTKIIJx4WUbbZI+gQLf/xFyk6d3JFYqyQPByoz1A3oWQXQ==" />
+                                                <p id="clear_cart_link" data-hook>
+                                                    <input type="submit" name="commit" value="Empty Cart" class="btn btn-default" data-disable-with="Empty Cart" />
+          or
+                                                    <a class="continue" href="/products">Continue shopping</a>
+                                                </p>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <script>
+  Spree.current_order_id = "R615352495"
+  Spree.current_order_token = "SeJeRc9e8iSLQg30PV6Rmw1564765348626"
+</script>
+                                </div>
+                            </div>
+                        </div>
+                        <script async type="text/javascript" id="mini-profiler" src="/mini-profiler-resources/includes.js?v=251162ee7dc30da30d5370581c664510" data-version="251162ee7dc30da30d5370581c664510" data-path="/mini-profiler-resources/" data-current-id="806q221fng6zk6njklfu" data-ids="806q221fng6zk6njklfu,l4kn6ti0plqumnmk5yjp,84whudtzu4e6687j24ub,210yrd6ejmry61pljhuy,8afljsuobdgwvtsh7ezy" data-horizontal-position="left" data-vertical-position="top" data-trivial="false" data-children="false" data-max-traces="20" data-controls="false" data-authorized="true" data-toggle-shortcut="Alt+P" data-start-hidden="false" data-collapse-results="true" data-html-container="body"></script>
+                    </body>
+                </html>
