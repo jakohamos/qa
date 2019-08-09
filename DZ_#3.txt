@@ -1,0 +1,17 @@
+﻿БД:
+1. SELECT * FROM Products;
+2. SELECT * FROM Products WHERE prod_price > 4; 
+На всякий случай уточняю, что в этом пункте в скобках неверно было указано название.
+Либо это просто часть задачи :)
+3. SELECT * FROM Customers WHERE cust_name != 'Fun4All';
+4. SELECT * FROM OrderItems ORDER BY item_price DESC;
+5. INSERT INTO Products (prod_id, vend_id, prod_name, prod_price, prod_desc)
+
+VALUES ('BNBG06', 'DLL01', 'Choko', 5.55, 'Hi, there! How are you?');
+
+API:
+31.220.42.115:3000/signup?spree_user[email]=jakohamoshere1@gmail.com&spree_user[password]=111111111&spree_user[password_confirmation]=111111111&commit=Create&utf8=✓&authenticity_token=p2G92TiVpceLw74hN2qT8yyb/iQqINYQlH5tNZAc9WdzWk3cI1RZFCQXyx+Um6MYOzQoG+lWFgT6B6gvZDxmTw==
+
+
+
+
